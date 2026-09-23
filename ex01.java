@@ -3,14 +3,12 @@ public class Produto {
     private double preco;
     private int quantidadeEstoque;
 
-    // Construtor completo
     public Produto(String nome, double preco, int quantidadeEstoque) {
         this.nome = nome;
         setPreco(preco);
         setQuantidadeEstoque(quantidadeEstoque);
     }
 
-    // Construtor sobrecarregado - inicializa estoque com 0
     public Produto(String nome, double preco) {
         this(nome, preco, 0);
     }
